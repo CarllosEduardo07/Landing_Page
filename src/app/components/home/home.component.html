@@ -1,10 +1,26 @@
 <app-header></app-header>
-<main>
+<main class=" font-Poppins flex flex-col space-y-20">
+
     <section class="flex justify-center items-center flex-col lg:flex-row">
         <div class=""> 
-            <span class="text-xl font-bold font-Roboto text-slate-500">CARLOS CONSULTORIA</span>
-            <h1 class="text-3xl font-Roboto font-black text-blue-950">A consultoria que você busca para seu software</h1>
+            <span class="text-xl font-bold font-Roboto text-secondary-text">CARLOS CONSULTORIA</span>
+            <h1 class="text-7xl font-Roboto font-black text-primary-text">A consultoria que você busca para seu software</h1>
         </div>
         <img ngSrc="assets/principal.png"  width="669" height="536"/>
     </section>
+    <section class="flex justify-center items-center">
+        <div class="border-b-8 border-secondary-color">
+            <h2 class="text-6xl font-semibold font-Roboto text-primary-text ">
+                95% das<br>
+                empresas
+            </h2>
+        </div>
+        <p class="text-4xl italic font-light">
+            não sabem como lidar com problemas de <strong>escalibilidade</strong> e grande volume de requisições
+        </p>
+    </section>
+
+    <app-btn-primary></app-btn-primary>
+
+
 </main>
