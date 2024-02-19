@@ -1,13 +1,14 @@
-<button class=" p-4 rounded-xl text- bg-secondary-color text-white"
+<button class=" py-5 px-10 text-xl rounded-3xl font-semibold bg-secondary-color text-white cursor-pointer disabled:opacity-5"
 (click)="submit()"
-[class]="'btn' + variant"
+[class]="'btn' + variant" 
 [disabled]="disabled"
-
 >
-<span *ngIf="!loading">
+
+@if (!loading) {
     {{btnText}}
-</span>
-<span *ngIf="loading">
+}@else {
     Carregando...
-</span>
+}
 </button>
+
+

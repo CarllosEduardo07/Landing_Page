@@ -9,4 +9,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .primary{
+        color: white;
+        background-color: #5222d0;
+    }
+    
+    .secondary{
+        background-color: white;
+    }
 }

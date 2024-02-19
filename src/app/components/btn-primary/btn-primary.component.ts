@@ -1,11 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output, } from '@angular/core';
+
 
 type BtnVariants = 'primary' | 'secondary';
 
 @Component({
     selector: 'app-btn-primary',
     standalone: true,
-    imports: [BtnPrimaryComponent],
+    imports: [CommonModule],
     templateUrl: './btn-primary.component.html',
     styleUrl: './btn-primary.component.css',
 })
@@ -19,4 +21,5 @@ export class BtnPrimaryComponent {
     submit() {
         this.onSubmit.emit();
     }
+
 }

@@ -1,0 +1,25 @@
+<section class="py-8 px-16 lg:px-28 text-justify bg-secondary-color flex items-center justify-center sm:flex-col lg:flex-row lg:gap-28">
+    <div class="flex-1">
+        <h3 class="py-2 mb-5 text-xl text-white font-bold">Fique por dentro de tendências</h3>
+
+        <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt aliquam consequuntur similique corporis quisquam repudiandae provident sint reprehenderit temporibus, quibusdam explicabo
+            vitae quasi, laboriosam est ipsum consequatur soluta impedit. Quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor incidunt facilis et repellat voluptate iste, quos,
+            nesciunt nisi ut exercitationem atque dicta architecto quo dolorem omnis nihil minima quod in.
+        </p>
+    </div>
+
+    <form [formGroup]="newsletterForm" class="w-full flex-1 flex flex-col">
+        <label for="name" class="text-white">Nome:</label>
+        <input id="name" formControlName="name" class="w-full h-14 bg-none bg-transparent border-solid border-white border-b-2 justify-start" />
+        <label for="email" class="text-white">Email:</label>
+        <input id="email" formControlName="email" class="w-full h-14 bg-none bg-transparent border-solid border-white border-b-2" />
+
+        <app-btn-primary btn-text="Se Inscreva"
+         variant="secondary" 
+         (submit)="onSubmit()" 
+         [disabled]="!newsletterForm.valid"
+         [loading]="loading()"
+         ></app-btn-primary>
+    </form>
+</section>
