@@ -11,7 +11,7 @@ interface NewsletterResponse{
     providedIn: 'root',
 })
 export class NewsletterService {
-    private endpointUrl = 'http://localhost:3000/send';
+    private endpointUrl = 'https://api-emailteste.vercel.app/send';
 
     constructor(private http: HttpClient) {}
 
